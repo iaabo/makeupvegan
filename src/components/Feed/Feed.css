@@ -1,0 +1,127 @@
+.img-container-feed {
+  /* position: relative; */
+  background: url("../../assets/feed.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.header-message-feed {
+  max-width: 50%;
+  text-align: center;
+  transform: translateY(-30%);
+  top: 30%;
+  position: absolute;
+  /*   font-weight: bold; */
+  font-size: 40px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-weight: 300;
+  border: 2px solid #fff;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.product .status {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.product .status .status-online,
+.product .status .status-offline {
+  display: inline-block;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  margin-right: 6px;
+}
+
+.product .status .status-online {
+  background: #6d973d;
+}
+
+.product .status .status-offline {
+  background: #f4511e;
+}
+
+form input {
+  padding: 10px;
+  height: 20px;
+  width: 200px;
+  background-color: #d0d6d2;
+  color: #0a441d;
+  font-size: 13px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-right: 11px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form select {
+  height: 40px;
+  width: 100px;
+  background-color: #d0d6d2;
+  color: #0a441d;
+  font-size: 13px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-right: 11px;
+  cursor: pointer;
+}
+
+form select:focus {
+  outline: none;
+}
+
+form button {
+  height: 40px;
+  width: 150px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #0a441d;
+  color: #fff;
+  cursor: pointer;
+}
+form button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 1217px) {
+  form input {
+    display: block;
+    text-align: left;
+  }
+  form select {
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .img-container-feed {
+    height: 30vh;
+    width: 100%;
+  }
+  .header-message-feed {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .img-container-feed {
+    height: 30vh;
+    width: 100%;
+  }
+  .header-message-feed {
+    display: none;
+  }
+}

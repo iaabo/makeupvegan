@@ -1,0 +1,263 @@
+.img-container {
+  background: url("../../assets/face.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.img-container-favorites {
+  /* position: relative; */
+  background: url("../../assets/eyes.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.img-container-about {
+  /* position: relative; */
+  background: url("../../assets/lips.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.background-container {
+  display: flex;
+  /*   position: relative; */
+  justify-content: center;
+  text-align: center;
+  height: inherit;
+  color: #ffffff;
+  background-color: rgba(83, 83, 81, 0.5);
+}
+
+.background-container-favorites {
+  display: flex;
+  /*   position: relative; */
+  justify-content: center;
+  text-align: center;
+  height: inherit;
+  color: #ffffff;
+  background-color: rgba(83, 83, 81, 0.5);
+}
+
+.header-message {
+  max-width: 50%;
+  text-align: center;
+  transform: translateY(-30%);
+  top: 30%;
+  position: absolute;
+  /*   font-weight: bold; */
+  font-size: 40px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-weight: 300;
+  border: 2px solid #fff;
+}
+
+.header-message h1 {
+  position: inherit;
+}
+
+.header-message-favorites {
+  max-width: 50%;
+  text-align: center;
+  transform: translateY(-30%);
+  top: 30%;
+  position: absolute;
+  /*   font-weight: bold; */
+  font-size: 40px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  padding: 20px 20px 20px 20px;
+  font-weight: 300;
+  border: 2px solid #fff;
+}
+
+.header-message-about {
+  max-width: 50%;
+  text-align: center;
+  transform: translateY(-30%);
+  top: 30%;
+  position: absolute;
+  /*   font-weight: bold; */
+  font-size: 30px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-weight: 300;
+  border: 2px solid #fff;
+}
+
+.user-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar {
+  height: 60px;
+  width: 400px;
+  background-color: #d0d6d2;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-right: 11px;
+}
+
+.button-rank {
+  height: 60px;
+  width: 400px;
+  background-color: #062510;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin-right: 11px;
+  cursor: pointer;
+}
+
+.button-return {
+  height: 60px;
+  width: 600px;
+  /* display: flex; */
+  /*   flex-wrap: wrap; */
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #062510;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button-return:hover {
+  background: #0b461e;
+}
+
+.button-return-text {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.button-load {
+  height: 60px;
+  width: 200px;
+  /* display: flex; */
+  /*   flex-wrap: wrap; */
+  text-align: center;
+  margin: auto;
+  display: block;
+  justify-content: center;
+  background-color: #062510;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.button-load:hover {
+  background-color: #02411e;
+}
+
+.button-return:focus {
+  outline: none;
+}
+.button-load:focus {
+  outline: none;
+}
+
+.button-rank:focus {
+  outline: none;
+}
+
+.searchbar:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .header-message {
+    display: none;
+  }
+
+  .header-message-favorites {
+    display: none;
+  }
+
+  .header-message-about {
+    display: none;
+  }
+
+  .img-container-favorites {
+    height: 30vh;
+  }
+
+  .img-container {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .button-return {
+    height: 60px;
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .img-container {
+    height: 25vh;
+    width: 100%;
+  }
+
+  .header-message-favorites {
+    font-size: 20px;
+  }
+
+  .img-container-favorites {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .header-message-about {
+    font-size: 18px;
+  }
+  .user-inputs {
+    padding-top: 20px;
+  }
+
+  .searchbar {
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    margin-bottom: 9px;
+  }
+
+  .button-rank {
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+  }
+
+  .button-return {
+    height: 60px;
+    width: 250px;
+    font-size: 15px;
+  }
+}

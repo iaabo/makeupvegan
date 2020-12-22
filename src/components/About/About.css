@@ -1,0 +1,164 @@
+.TabSelector {
+  display: flex;
+  justify-content: space-around;
+}
+.TabSelector button {
+  margin-top: 20px;
+  border: 5px solid transparent;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(22, 53, 27);
+  padding: 10px;
+  margin: 15px;
+  flex-grow: 0.3;
+  cursor: pointer;
+}
+
+.TabSelector button {
+  border-bottom: 2px solid rgb(191, 207, 198);
+}
+
+.TabSelector button.active {
+  border-bottom: 2px solid #0f350e;
+}
+
+.TabSelector button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .img-container-about {
+    height: 30vh;
+  }
+  .header-message-feed {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .img-container-feed {
+    height: 40vh;
+    width: 100%;
+  }
+  .header-message-feed {
+    font-size: 20px;
+  }
+}
+
+.team-container {
+  margin-top: 50px;
+}
+.team {
+  display: flex;
+  color: #0f350e;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Form */
+
+.form-wrapper {
+  position: absolute;
+  left: 25%;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  width: 100%;
+  /* display: flex;
+  text-align: center;
+  align-items: center; */
+  padding: 0 20px;
+}
+
+.contact-form {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 550px;
+  /*  margin: 0 auto; */
+  background: rgba(0, 0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 10px;
+  /*   flex-direction: column; */
+}
+
+.input-fields {
+  /*  display: flex;
+  align-items: center;
+  text-align: center; */
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #0f350e;
+  padding: 10px;
+  color: #0f350e;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  color: #0f350e;
+}
+::-moz-input-placeholder {
+  color: #0f350e;
+}
+
+::-ms-input-placeholder {
+  color: #0f350e;
+}
+
+.btn {
+  background: #0f350e;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #ffff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+  border: 20px;
+  color: #438d40;
+}
+
+.social-media :hover {
+  color: #0f350e;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 80px;
+  }
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
+  .team {
+    font-size: 20px;
+  }
+}
