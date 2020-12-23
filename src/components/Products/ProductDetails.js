@@ -20,7 +20,7 @@ class ProductDetails extends React.Component {
   fetchProduct = () => {
     axios
       .get(
-        `http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan`
+        `https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan`
       )
       .then((response) => {
         const selectedProductId = Number(this.props.match.params.id);

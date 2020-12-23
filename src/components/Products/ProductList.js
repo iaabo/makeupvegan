@@ -20,7 +20,7 @@ class ProductList extends React.Component {
   fetchProducts = () => {
     axios
       .get(
-        `http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan`
+        `https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan`
       )
       .then((response) => this.setState({ products: response.data }));
   };
