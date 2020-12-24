@@ -21,15 +21,13 @@ header {
 
 .vid-bg {
   position: fixed;
-  top: 65%;
-  left: 40%;
   min-height: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   z-index: -100;
   transform: translate(-50%, -50%);
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .banner-text {
@@ -41,13 +39,13 @@ header {
 }
 
 .banner-message {
-  border: 5px solid #fff;
+  border: 5px solid #20362a;
   padding: 10px;
   margin: 10px;
 }
 
 .banner-text .banner-title {
-  color: #fff;
+  color: #20362a;
   font-size: 70px;
   letter-spacing: 3px;
   word-spacing: 6px;
@@ -55,13 +53,13 @@ header {
 }
 
 span {
-  color: #20362a;
+  color: rgb(216, 213, 213);
   font-size: 70px;
   font-weight: initial;
 }
 
 .banner-subtile {
-  color: #fff;
+  color: #20362a;
   font-size: 40px;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -102,5 +100,26 @@ span {
     font-size: 30px;
     font-weight: lighter;
     letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .banner-text .banner-title {
+    font-size: 25px;
+  }
+
+  span {
+    font-size: 30px;
+    font-weight: initial;
+  }
+
+  .banner-subtile {
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+
+  .button-banner {
+    width: 200px;
   }
 }

@@ -1,23 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import vegan from "./vegan.mp4";
+/* import vegan from "./vegan.mp4"; */
+import vegan1 from "./vegan1.jpg";
 import "./Home.css";
 
 const Home = () => {
   return (
     <div>
       <header className="fix">
-        <video autoPlay loop muted className="vid-bg">
+        <img src={vegan1} alt="vegan" className="vid-bg" />
+        {/*  <video autoPlay loop muted className="vid-bg">
           <source src={vegan} type="video/mp4" />
-        </video>
+        </video> */}
         <div className="banner-text">
           <div className="banner-message">
             <h1 className="banner-title">
               <span>Beauty</span> without the Beast
             </h1>
             <p className="banner-subtile">
-              The latest <span>vegan makeup</span>, 100% cruelty free! Being
-              naturally beautiful.
+              Search the latest vegan makeup products in our library and add to your favorites.
             </p>
           </div>
 

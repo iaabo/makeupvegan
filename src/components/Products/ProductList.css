@@ -1,3 +1,7 @@
+.message-mobile {
+  display: none;
+}
+
 .img-container {
   background: url("../../assets/face.jpg");
   background-size: cover;
@@ -17,7 +21,7 @@
 
 .img-container-about {
   /* position: relative; */
-  background: url("../../assets/lips.jpeg");
+  background: url("../../assets/lips.jpg");
 
   background-size: cover;
   background-position: center;
@@ -220,7 +224,7 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .img-container {
     height: 25vh;
     width: 100%;
