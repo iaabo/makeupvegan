@@ -1,3 +1,24 @@
+# Beauty without the beast - The vegan makeup library
+
+Done with React.js and Makeup API (http://makeup-api.herokuapp.com/)
+Pictures from: pexels.com 
+
+Business Problem:
+Help Vegans find makeup, 100% cruelty free, in a user-friendly online library.
+
+Demo: https://beauty-without-beast.netlify.app
+
+Keywords:
+Single Page Application
+React Router
+CSS
+PublicAPI
+Context React
+React Hooks
+Axios
+Responsiveness
+UI-UX
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
