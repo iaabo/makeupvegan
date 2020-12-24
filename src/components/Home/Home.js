@@ -18,7 +18,8 @@ const Home = () => {
               <span>Beauty</span> without the Beast
             </h1>
             <p className="banner-subtile">
-              Search the latest vegan makeup products in our library and add to your favorites.
+              Search the latest vegan makeup products in our library and add to
+              your favourites.
             </p>
           </div>
 
