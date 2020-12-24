@@ -2,21 +2,38 @@
 
 Done with React.js and Makeup API (http://makeup-api.herokuapp.com/)
 Pictures from: pexels.com 
+It is a purely frontend web application.
 
-Business Problem:
+# Business Problem:
 Help Vegans find makeup, 100% cruelty free, in a user-friendly online library.
 
-Demo: https://beauty-without-beast.netlify.app
+# Demo: 
+https://beauty-without-beast.netlify.app
 
-Keywords:
-Single Page Application
-React Router
-CSS
-PublicAPI
-Context React
-React Hooks
-Axios
-Responsiveness
+# How it works:
+
+The user can search for a specific category of makeup (like blush, eyeliner) and display only the products with rating above 4. 
+
+The user can click to see more details such as name, brand, price, the store that has the product. If the user wants to buy that product, the web app has the link for the online store.
+
+The user can favourite a product by clicking on the heart. The product will appear on the "my favourite" page.
+
+The user can share his/her opinion and see the others' feeds on the "Community" page. 
+
+Web App adapted to laptop, tablets and smartphones with L and M screen sizes.
+
+# All the makeup information cames from the Makeup API.
+Business idea, code and design done by Inês Barroso, as a side project when attending Wild Code School - Lisboa - December, 2020.
+
+# Keywords:
+Single Page Application,
+React Router,
+CSS,
+PublicAPI,
+Context React,
+React Hooks,
+Axios,
+Responsiveness,
 UI-UX
 
 # Getting Started with Create React App
