@@ -46,16 +46,12 @@ class ProductList extends React.Component {
     return (
       <div>
         <NavBar />
-        <h1 className="message-mobile">
-          Welcome to the Vegan Makeup Library. Search 100% cruelty makeup and
-          see all the details.
-        </h1>
         <div className="img-container">
           <div className="background-container">
             <h1 className="header-message">
               {" "}
-              Welcome to the Vegan Makeup Library. Search 100% cruelty makeup
-              and see all the details.
+              Welcome to the Vegan Makeup Library. Search 100% cruelty-free
+              makeup and see all the details.
             </h1>
           </div>
         </div>
