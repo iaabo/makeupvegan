@@ -1,4 +1,3 @@
-import React from "react";
 import "./NavBar.css";
 
 export const SidebarData = [
@@ -12,11 +11,11 @@ export const SidebarData = [
     path: "/products",
     className: "nav-text",
   },
-  /* {
+  {
     title: "My Favourites",
     path: "/favorites",
     className: "nav-text",
-  }, */
+  },
   {
     title: "Community",
     path: "/community",
