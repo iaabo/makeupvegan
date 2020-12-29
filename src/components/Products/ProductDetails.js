@@ -11,7 +11,7 @@ class ProductDetails extends React.Component {
 
   state = {
     product: {},
-    favorite: false,
+    /* favorite: false, */
   };
   componentDidMount() {
     this.fetchProduct();
@@ -27,13 +27,13 @@ class ProductDetails extends React.Component {
         const product = response.data.filter(
           (product) => product.id === selectedProductId
         );
-        this.setState({ product: product[0] }, () => {
+       /*  this.setState({ product: product[0] }, () => {
           this.isProductFavourite();
-        });
+        }); */
       });
   };
 
-  isProductFavourite = () => {
+  /* isProductFavourite = () => {
     if (
       this.context.favouriteProducts.some(
         (product) => product.id === this.state.product.id
@@ -41,11 +41,11 @@ class ProductDetails extends React.Component {
     ) {
       this.setState({ favorite: true });
     }
-  };
+  }; */
 
   render() {
     /*  console.log(Number(this.props.match.params.id)); */
-    const { handleFavouriteProducts, favouriteProducts } = this.context;
+    /* const { handleFavouriteProducts, favouriteProducts } = this.context; */
 
     return (
       <div>
@@ -54,7 +54,7 @@ class ProductDetails extends React.Component {
           <div className="product-image">
             <img src={this.state.product.image_link} alt="" />
           </div>
-          <div className="span-heart">
+          {/* <div className="span-heart">
             <span
               style={{ fontSize: "45px" }}
               className={this.state.favorite ? "is-favorite" : ""}
@@ -74,7 +74,7 @@ class ProductDetails extends React.Component {
               {" "}
               &#9829;
             </span>
-          </div>
+          </div> */}
           <div className="product-info">
             <h1>
               Brand:{" "}

@@ -12,11 +12,11 @@ export const SidebarData = [
     path: "/products",
     className: "nav-text",
   },
-  {
+  /* {
     title: "My Favourites",
     path: "/favorites",
     className: "nav-text",
-  },
+  }, */
   {
     title: "Community",
     path: "/community",

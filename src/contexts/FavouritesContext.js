@@ -1,4 +1,4 @@
-import React, { createContext, Component } from "react";
+/* import React, { createContext, Component } from "react";
 
 export const FavouritesContext = createContext();
 
@@ -33,3 +33,4 @@ class FavouriteProductsProvider extends Component {
 }
 
 export default FavouriteProductsProvider;
+ */

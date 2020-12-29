@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import NavBar from "./../NavBar/NavBar";
 import Products from "./../Products/Products";
 import { Link } from "react-router-dom";
@@ -43,14 +43,4 @@ class Favorites extends React.Component {
   }
 }
 
-export default Favorites;
-
-/* const Favorites = () => {
-  return (
-    <div>
-      <NavBar />
-      My Favorite Vegan Makeup
-    </div>
-  );
-};
- */
+export default Favorites; */
