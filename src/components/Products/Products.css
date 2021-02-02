@@ -118,6 +118,14 @@
   outline: none;
 }
 
+.loading-spinner {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
 @media only screen and (max-width: 400px) {
   .product-type {
     font-size: 20px;

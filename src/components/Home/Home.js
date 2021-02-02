@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 /* import vegan from "./vegan.mp4"; */
-import vegan1 from "./vegan1.jpg";
+/* import vegan1 from "./vegan1.jpg"; */
 import "./Home.css";
 
 const Home = () => {
   return (
     <div>
       <header className="fix">
-        <img src={vegan1} alt="vegan" className="vid-bg" />
-        {/*  <video autoPlay loop muted className="vid-bg">
-          <source src={vegan} type="video/mp4" />
-        </video> */}
+       {/*  <img src={vegan1} alt="vegan" className="vid-bg" /> */}
+       
         <div className="banner-text">
           <div className="banner-message">
             <h1 className="banner-title">

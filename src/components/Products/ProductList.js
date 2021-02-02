@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import Loader from "react-loader-spinner";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Products from "./Products";
@@ -36,11 +37,6 @@ class ProductList extends React.Component {
     this.setState({ productSearchValue: inputValue });
   };
 
-  /* loadMore = () => {
-    this.setState((current) => {
-      return { visible: current.visible + 6 };
-    });
-  }; */
 
   render() {
     return (
@@ -49,7 +45,6 @@ class ProductList extends React.Component {
         <div className="img-container">
           <div className="background-container">
             <h1 className="header-message">
-              {" "}
               Welcome to the Vegan Makeup Library. Search 100% cruelty-free
               makeup and see all the details.
             </h1>
@@ -67,30 +62,32 @@ class ProductList extends React.Component {
               : "Display only rating > 4"}
           </button>
         </div>
-        <div className="container">
-          {this.state.products
-            .filter((item) => {
-              item.product_type = item.product_type.toLowerCase();
-              return item.product_type.startsWith(
-                this.state.productSearchValue.toLowerCase()
-              );
-            })
-            .filter((product) =>
-              this.state.areOnlyRankedProductsDisplayed
-                ? product.rating > 4
-                : product
-            )
-            /*  .slice(0, this.state.visible) */
-            .map((product) => (
-              <Products {...product} />
-            ))}
+        <div>
+          {this.state.products.length > 0 ? (
+            <div className="container">
+              {this.state.products
+                .filter((item) => {
+                  item.product_type = item.product_type.toLowerCase();
+                  return item.product_type.startsWith(
+                    this.state.productSearchValue.toLowerCase()
+                  );
+                })
+                .filter((product) =>
+                  this.state.areOnlyRankedProductsDisplayed
+                    ? product.rating > 4
+                    : product
+                )
+                .map((product) => (
+                  <Products {...product} />
+                ))}
+            </div>
+          ) : (
+            <div className="loading-spinner">
+             <Loader type="BallTriangle" color=" #02411e" height={80} width={80}/>
+            </div>
+          )}
         </div>
 
-        {/*  {this.state.visible >= this.state.products.length ? null : (
-          <button type="button" onClick={this.loadMore} className="button-load">
-            Load More
-          </button>
-        )} */}
         <Footer />
       </div>
     );

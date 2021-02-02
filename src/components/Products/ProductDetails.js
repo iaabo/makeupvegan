@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Loader from "react-loader-spinner";
 import axios from "axios";
 import NavBar from "../NavBar/NavBar";
 import "./ProductDetails.css";
@@ -54,6 +55,7 @@ class ProductDetails extends React.Component {
           <div className="product-image">
             <img src={this.state.product.image_link} alt="" />
           </div>
+
           <div className="span-heart">
             <span
               style={{ fontSize: "45px" }}
@@ -77,7 +79,7 @@ class ProductDetails extends React.Component {
           </div>
           <div className="product-info">
             <h1>
-              Brand:{" "}
+              Brand:
               {this.state.product.brand === "" ||
               this.state.product.brand === null
                 ? "not available"
@@ -85,15 +87,14 @@ class ProductDetails extends React.Component {
             </h1>
             <h2>Product type: {this.state.product.product_type}</h2>
             <h2>
-              {" "}
-              Category:{" "}
+              Category:
               {this.state.product.category === "" ||
               this.state.product.category === null
                 ? "not available"
-                : this.state.product.category}{" "}
+                : this.state.product.category}
             </h2>
             <h2>
-              Name:{" "}
+              Name:
               {this.state.product.name === "" ||
               this.state.product.name === null
                 ? "not available"
@@ -102,11 +103,11 @@ class ProductDetails extends React.Component {
 
             <div className="product-price-btn">
               <h2>
-                Price:{" "}
+                Price:
                 {this.state.product.price !== "0.0"
                   ? this.state.product.price
                   : "not available"}
-              </h2>{" "}
+              </h2>
               <div className="detail-buttons">
                 <a
                   href={this.state.product.product_link}
@@ -115,7 +116,7 @@ class ProductDetails extends React.Component {
                   className="button-product"
                 >
                   Go to Store
-                </a>{" "}
+                </a>
                 <Link
                   to="/products"
                   style={{ textDecoration: "none", color: "white" }}
