@@ -32,10 +32,18 @@ class Favorites extends React.Component {
             Return to search
           </Link>
         </button>
-        <div className="container">
-          {favouriteProducts.map((product) => (
-            <Products {...product} />
-          ))}
+        <div>
+          {favouriteProducts.length > 0 ? (
+            <div className="container">
+              {favouriteProducts.map((product) => (
+                <Products {...product} />
+              ))}
+            </div>
+          ) : (
+            <div>
+              <h1 className="header-message-no-favorites">You have no favorite products</h1>
+            </div>
+          )}
         </div>
         <Footer />
       </div>

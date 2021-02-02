@@ -6,6 +6,7 @@ import NavBar from "../NavBar/NavBar";
 import "./ProductDetails.css";
 import { FavouritesContext } from "../../contexts/FavouritesContext";
 import Footer from "../Footer/Footer";
+import { AiFillRightSquare } from "react-icons/ai";
 
 class ProductDetails extends React.Component {
   static contextType = FavouritesContext;
@@ -47,6 +48,7 @@ class ProductDetails extends React.Component {
   render() {
     /*  console.log(Number(this.props.match.params.id)); */
     const { handleFavouriteProducts, favouriteProducts } = this.context;
+   
 
     return (
       <div>
