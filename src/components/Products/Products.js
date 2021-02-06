@@ -8,7 +8,16 @@ function Products(props) {
       <div className="row">
         <div className="product">
           <div className="picture">
-            <img src={props.image_link} alt="" className="img-fluid" />
+            <img
+              src={props.image_link}
+              alt=""
+              className="img-fluid"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src =
+                  "https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?cs=srgb&dl=pexels-jhong-pascua-3018845.jpg&fm=jpg";
+              }}
+            />
           </div>
           <div className="product-content">
             <h3 className="product-type"> {props.product_type}</h3>{" "}

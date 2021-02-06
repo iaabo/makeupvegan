@@ -6,7 +6,6 @@ import NavBar from "../NavBar/NavBar";
 import "./ProductDetails.css";
 import { FavouritesContext } from "../../contexts/FavouritesContext";
 import Footer from "../Footer/Footer";
-import { AiFillRightSquare } from "react-icons/ai";
 
 class ProductDetails extends React.Component {
   static contextType = FavouritesContext;
@@ -14,6 +13,7 @@ class ProductDetails extends React.Component {
   state = {
     product: {},
     favorite: false,
+    loading: true,
   };
   componentDidMount() {
     this.fetchProduct();
@@ -29,7 +29,7 @@ class ProductDetails extends React.Component {
         const product = response.data.filter(
           (product) => product.id === selectedProductId
         );
-        this.setState({ product: product[0] }, () => {
+        this.setState({ product: product[0], loading: false }, () => {
           this.isProductFavourite();
         });
       });
@@ -48,14 +48,30 @@ class ProductDetails extends React.Component {
   render() {
     /*  console.log(Number(this.props.match.params.id)); */
     const { handleFavouriteProducts, favouriteProducts } = this.context;
-   
-
+    if (this.state.loading)
+      return (
+        <Loader
+          className="loader"
+          type="BallTriangle"
+          color=" #02411e"
+          height={80}
+          width={80}
+        />
+      );
     return (
       <div>
         <NavBar />
         <div className="wrapper">
           <div className="product-image">
-            <img src={this.state.product.image_link} alt="" />
+            <img
+              src={this.state.product.image_link}
+              alt=""
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src =
+                  "https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?cs=srgb&dl=pexels-jhong-pascua-3018845.jpg&fm=jpg";
+              }}
+            />
           </div>
 
           <div className="span-heart">
